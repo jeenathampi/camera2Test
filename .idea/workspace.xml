@@ -33,7 +33,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4db4c2b5-6a86-48d0-8db3-a580205fa1aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cmpe295/iAssist/ui/fragments/VisualAssistanceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmpe295/iAssist/ui/fragments/VisualAssistanceFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,5 +175,53 @@
       <screen x="-3840" y="-685" width="3840" height="2160" />
     </state>
     <state x="-2332" y="154" key="AndroidCreateResourceFileDialog/0.0.1792.1120/-3840.-685.3840.2160@-3840.-685.3840.2160" timestamp="1633109343304" />
+    <state x="937" y="294" key="AndroidCreateXmlResourceDialog" timestamp="1634165045546">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="937" y="294" key="AndroidCreateXmlResourceDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1634165045546" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1634247705234">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1634247705234" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1634247705233">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1634247705233" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1634247705232">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1634247705232" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1634247705233">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1634247705233" />
+    <state width="1750" height="317" key="GridCell.Tab.1.bottom" timestamp="1634246904125">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1634246904125" />
+    <state width="1750" height="317" key="GridCell.Tab.1.center" timestamp="1634246904124">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1634246904124" />
+    <state width="1750" height="317" key="GridCell.Tab.1.left" timestamp="1634246904124">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1634246904124" />
+    <state width="1750" height="317" key="GridCell.Tab.1.right" timestamp="1634246904124">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="317" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1634246904124" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="result.get(CaptureResult.LENS_STATE)" language="kotlin" />
+        <watch expression="result.get(CaptureResult.BLACK_LEVEL_LOCK)" language="kotlin" />
+        <watch expression="CameraCharacteristics.LENS_INFO_FOCUS_DISTANCE_CALIBRATION_CALIBRATED" language="kotlin" />
+        <watch expression="CaptureResult.LENS_STATE" language="kotlin" />
+        <watch expression="CaptureResult.LENS_FOCUS_DISTANCE" language="kotlin" />
+        <watch expression="result" language="kotlin" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
