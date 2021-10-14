@@ -33,14 +33,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4db4c2b5-6a86-48d0-8db3-a580205fa1aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cmpe295/iAssist/ui/fragments/VisualAssistanceFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmpe295/iAssist/ui/fragments/VisualAssistanceFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_visual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_visual.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@542040762815]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/jeenathampi/.android/avd/Pixel_2_API_26.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -176,5 +180,9 @@
       <screen x="-3840" y="-685" width="3840" height="2160" />
     </state>
     <state x="-2332" y="154" key="AndroidCreateResourceFileDialog/0.0.1792.1120/-3840.-685.3840.2160@-3840.-685.3840.2160" timestamp="1633109343304" />
+    <state x="937" y="294" key="AndroidCreateXmlResourceDialog" timestamp="1634165045546">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="937" y="294" key="AndroidCreateXmlResourceDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1634165045546" />
   </component>
 </project>
