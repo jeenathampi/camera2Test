@@ -25,6 +25,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
+import com.cmpe295.iAssist.DashboardActivity
 import com.cmpe295.iAssist.databinding.FragmentVisualBinding
 import com.google.gson.Gson
 import edmt.dev.edmtdevcognitivevision.Contract.AnalysisResult
@@ -35,6 +36,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
 import java.io.*
 import java.util.*
 
@@ -46,8 +49,8 @@ class VisualAssistanceFragment : Fragment() {
     lateinit var res : AnalysisResult
     lateinit var visionServiceClient : VisionServiceClient
     companion object {
-        val API_KEY = "*******"
-        val API_LINK = "*********"
+        val API_KEY="**"
+        val API_LINK="**"
         val ORIENTATIONS = SparseIntArray()
         init {
             ORIENTATIONS.append(Surface.ROTATION_0, 90)
@@ -76,8 +79,17 @@ class VisualAssistanceFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        EventBus.getDefault().register(this)
         binding = FragmentVisualBinding.inflate(layoutInflater)
         return binding.root
+    }
+
+    @Subscribe
+    public fun onKeyEvent(event : DashboardActivity.Event) {
+        // Called by eventBus when an event occurs
+        if(event.keyCode == 25) {
+            takePicture()
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -90,9 +102,9 @@ class VisualAssistanceFragment : Fragment() {
 //            requestPermissions(Constants.REQUIRED_PERMISSIONS, Constants.REQUEST_CODE_PERMISSIONS)
 //        }
 
-        binding.btnTakepicture.setOnClickListener {
-            takePicture()
-        }
+//        binding.btnTakepicture.setOnClickListener {
+//            takePicture()
+//        }
 
         textureView = binding.texture
         assert(textureView != null)
@@ -472,7 +484,14 @@ class VisualAssistanceFragment : Fragment() {
         } else {
             textureView!!.surfaceTextureListener = textureListener
         }
+
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        EventBus.getDefault().unregister(this)
+    }
+
 
     override fun onPause() {
         Log.e(TAG, "onPause")
